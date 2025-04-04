@@ -98,7 +98,7 @@ const productSchema = new mongoose.Schema({
     required: [true, "Please Enter Product Stock"],
     default: 1,
   },
-  likes: [{ type: mongoose.Schema.ObjectId, ref: "User" }], // Reference to User model
+  likes: [{ type: mongoose.Schema.ObjectId, ref: "User" }], 
   likeCount: { type: Number, default: 0 },
   user: {
     type: mongoose.Schema.ObjectId,
